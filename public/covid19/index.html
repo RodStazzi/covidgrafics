@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css"
+    integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous" />
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+
+  <!-- style -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- icon -->
+  <!-- <link rel="icon" type="image/x-icon" href="assets/img/icons/3.svg"> -->
+
+
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container-fluid"> 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+        <a class="navbar-brand" href="#"><i class="fa-solid fa-virus-covid"></i> Covid 19</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link text-white" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="indexUsa.html" id="usaClick">Usa</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div id="formulario" class="col-md-6 d-none">
+      <form>
+        <div class="form-group">
+          <label>Email address</label>
+          <input value="Julianne.OConner@kory.org" type="email" class="form-control" aria-describedby="emailHelp">
+        </div>
+        <div class="form-group">
+          <label>Password</label>
+          <input value="secret" type="password" class="form-control">
+        </div>
+        <button type="submit" class="btn btn-primary">Entrar</button>
+      </form>
+  </div>
+  <div id="graficMundial" style="height: 500px; width: 100%;"></div>
+
+  <div class="col-md-12 mt-5 text-center" id="tableMundial">
+
+    <h3>Datos de cada País</h3>
+    <table class="table table-sm mt-3 table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Nombre del país</th>
+        <th scope="col">Casos activos</th>
+        <th scope="col">Casos confirmados</th>
+        <th scope="col">Fallecidos</th>
+        <th scope="col">Recuperados</th>
+        <th scope="col">Detalles</th>
+
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+</div>
+<!-- Modals -->
+
+<div class="modal fade" id="exampleModal">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content bg-dark">
+      <div id="modal" class="modal-body" style="height: 350px; width: 100%;">...</div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<div class="modal fade" id="loaderModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-transparent border-0">
+      <div class="modal-body">
+        <div class="loader"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>
